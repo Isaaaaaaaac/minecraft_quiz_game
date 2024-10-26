@@ -25,7 +25,6 @@ while not quit:
     for hint in quiz_question.hints:
         print(f"the hint is: {hint}")
         inp = input("Input your answer, type 'q' to quit.")
-        print(inp)
         if inp.strip() == 'q':
             quit = True
         elif quiz_question.guess(inp):
